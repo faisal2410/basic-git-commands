@@ -1,4 +1,15 @@
 /**
+ * * Ref : https://sanjayrajpoot.hashnode.dev/you-must-use-these-git-commands
+ * 
+* Ref : https://apoorvdubey.hashnode.dev/basic-git-commands-every-developer-should-know
+
+*Ref : https://sdutta.hashnode.dev/all-you-need-to-know-about-git
+
+Git Troubleshooting - Permission Denied (publickey)==================================================
+Ref: https://yasmina95.hashnode.dev/git-troubleshooting-permission-denied-publickey
+ * */ 
+
+/**
  * For New Repository (6 commands)
  * ============
  * git init
@@ -15,7 +26,12 @@
  * git push
  * 
  * */ 
-
+/**
+ * git config: 
+ * ==========
+ * git config --global user.name "John Doe"
+  git config --global user.email johndoe@example.com
+ * */ 
 /**
  * Common git commands
  * =========================
@@ -34,13 +50,56 @@
  * ======================
  * touch temp/.gitkeep
  * 
- * Removing file
+ * Removing file (After removing you should push)
  * ============
  * 
  * rm newfile.txt
  * 
  * Removing folder
- * 
+ * ==============
  *  rm -r test
+ * 
+ * push
+ * =====
+ * git add .
+ * git commit -m "updated"
+ * git push
+ * 
+ * */ 
+
+/**
+ * git branch   //which branch available
+ * 
+ * git checkout -b feature/new-table
+ * git checkout master
+ * 
+ * Delete Branch
+ * git branch -D feature/new-table  //Force delete
+ * git branch -d feature/new-table
+ * 
+ * Merging Branch
+ * ==============
+ * git merge feature/new-table  //stay on the master branch and merge feature/new-table branch
+ * 
+ * git merge bugfix/table
+ *Note : after merging feature/new-table branch with master branch we can delete
+this feature/new-table branch by
+ git branch -d feature/new-table
+  * */ 
+
+/**
+ * Rebasing commits
+ * ==============
+ * git rebase master         // command executed from bugfix/table branch
+ * git merge bugfix/table    //command executed from master branch
+ * 
+ * */  
+
+/**
+ * Merge Conflict :
+git merge --abort
+git rebase master
+git rebase --abort
+ * 
  * 
  * */ 
