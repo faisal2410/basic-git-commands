@@ -1,0 +1,52 @@
+unstaging file
+git reset Head readme.md
+git log
+git log --patch
+touch temp/.gitkeep
+removing file
+rm newfile.txt
+
+removing folder
+
+rm --rf --temp
+git commit -m "removing temp folder with .gitkeep file"
+
+Git branch
+
+git checkout -b feature/new-table
+
+git checkout master    //coming back to master branch
+
+Delete Branch
+git branch -d feature/new-table
+git branch -D feature/new-table    // Force delete
+
+after merging feature/new-table branch with master branch we can delete
+this feature/new-table branch by get branch -d feature/new-table
+
+Merging branch
+git merge feature/new-table
+
+
+git branch    //which branch available
+
+git merge bugfix/table
+
+Rebasing commits
+git rebase master    // command executed from bugfix/table branch
+git merge bugfix/table  //command executed from master branch
+
+
+Merge Conflict :
+git merge --abort
+git rebase master
+git rebase --abort
+
+gitlab
+
+git reset --hard origin/master
+
+git pull --rebase
+git pull origin master --rebase
+
+
