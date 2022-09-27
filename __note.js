@@ -29,10 +29,18 @@
  * 
  * git status
  * 
- * Creating an empty folder
+ * Creating .gitkeep file with in an empty folder
+ * ref : https://www.freecodecamp.org/news/what-is-gitkeep/
  * ======================
  * touch temp/.gitkeep
  * 
  * Removing file
  * ============
+ * 
+ * rm newfile.txt
+ * 
+ * Removing folder
+ * 
+ *  rm -r test
+ * 
  * */ 
